@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonte do Google - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfólio pessoal da Gabriela Teixeira" />
     <meta name="author" content="Gabriela Teixeira" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
     <title>Portfólio da Gaba</title>
   </head>
   <body>
     <!-- Cabeçalho da Pagina -->
-    <header>
-      <div id="titulo"><a href="#">Universo</a></div>
+    <header class="flex menu_container">
+      <div id="header-content" class="menu_content">
+        <div id="titulo"><a href="#">Universo</a></div>
 
-      <div id="menu">
-        <nav>
-          <!-- Marcadores nao ordenados -->
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
+        <div id="menu" class="flex">
+          <nav>
+            <!-- Marcadores nao ordenados -->
+            <ul class="flex menu_list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- Seção Principal da Pagina -->
     <main>
-      <section id="home">
-        <article id="home_text">
+      <section id="home" class="flex home_container">
+        <article id="home_text" class="flex home_content">
           <h4>Bem-vindo ao Novo Universo</h4>
           <h1>Mundos diferentes para pessoas diferentes</h1>
           <p>
@@ -37,33 +50,42 @@
             debitis? Neque iure quae ad unde itaque cum laudantium quasi
             perferendis.
           </p>
-          <a href="https://github.com/gaba-teixeira" target="_blank"
+          <a
+            class="botao"
+            href="https://github.com/gaba-teixeira"
+            target="_blank"
             >Explorar</a
           >
         </article>
-        <article id="home_image">
+        <article id="home_image" class="home_content">
           <img
             src="./assets/img/astronauta.svg"
             alt="Capacete de Astronauto Animado"
           />
         </article>
       </section>
-      <section id="about"></section>
-      <img src="./assets/img/user_02.svg" alt="Foto do Perfil do github" />
-      <article id="about_text">
-        <h1>Sobre mim</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          autem, veritatis quia ullam ad natus rerum facere amet minima tempora
-          laudantium unde nesciunt! Libero harum incidunt nihil, cum quaerat
-          recusandae!
-        </p>
-        <div id="about_github">
-          <a href="https://github.com/gaba-teixeira" target="_blank">GitHub</a>
-          <p>200 Seguidores</p>
-          <p>20 Repositorios</p>
-        </div>
-      </article>
+      <section id="about" class="flex about_container">
+        <img src="./assets/img/user_02.svg" alt="Foto do Perfil do github" />
+        <article id="about_text" class="flex about_content">
+          <h2>Sobre mim</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            autem, veritatis quia ullam ad natus rerum facere amet minima
+            tempora laudantium unde nesciunt! Libero harum incidunt nihil, cum
+            quaerat recusandae!
+          </p>
+          <div id="about_github" class="flex">
+            <a
+              class="botao"
+              href="https://github.com/gaba-teixeira"
+              target="_blank"
+              >GitHub</a
+            >
+            <p>200 Seguidores</p>
+            <p>20 Repositorios</p>
+          </div>
+        </article>
+      </section>
       <section id="contact">
         <h4>Contate-me</h4>
         <p>
