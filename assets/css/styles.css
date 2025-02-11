@@ -78,7 +78,7 @@ a {
 }
 
 #titulo a {
-  color: var(--white);
+  color: var(--white) ;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -171,6 +171,12 @@ h4 {
   border-radius: 50%;
 }
 
+.about_content p img {
+  border: none;
+  border-radius: 0%;
+  width: 1.5rem;
+}
+
 .about_content {
   width: 50vw;
   flex-direction: column;
@@ -190,7 +196,10 @@ h1 {
 }
 
 .about_content p {
-  margin: 1rem 0;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
 }
 
 .about_content .botao {
@@ -298,12 +307,14 @@ h1 {
 }
 
 /* Estilização da seção form */
+
 form {
   display: flex;
   flex-direction: column;
-  margin: 7rem 0 0 0;
+  margin: 7rem 0 0 3rem;
   padding: 1.25rem;
   border: none;
+  width: 80%;
 }
 
 form label {
@@ -312,7 +323,8 @@ form label {
 }
 
 form input,
-textarea {
+textarea,
+.botao {
   width: 100%;
   margin: 0.5rem 0 1rem;
   padding: 0.5rem;

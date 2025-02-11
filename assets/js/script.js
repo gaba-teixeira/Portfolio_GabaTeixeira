@@ -22,8 +22,15 @@ async function getApiGitHub() {
               target="_blank"
               >GitHub</a
             >
-            <p>${perfil.followers} Seguidores</p>
-            <p>${perfil.public_repos} Repositorios</p>
+            <p> 
+        <img src="https://ik.imagekit.io/3ov0fr7b9/usuarios/icons8-compartilhar-2-50.png?updatedAt=1739310058859" alt="icon de seguidores"/>
+            
+            
+            ${perfil.followers} Seguidores</p>
+            <p> 
+        <img src="https://ik.imagekit.io/3ov0fr7b9/usuarios/icons8-pasta-50.png?updatedAt=1739310059295" alt="icon de seguidores"/>
+            
+            ${perfil.public_repos} Repositorios</p>
           </div>
         </article>
         
