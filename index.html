@@ -69,23 +69,7 @@
         </article>
       </section>
       <section id="about" class="flex about_container">
-        <img src="https://ik.imagekit.io/3ov0fr7b9/usuarios/fotor-20250210145121.png" alt="Foto do Perfil do github" />
-        <article id="about_text" class="flex about_content">
-          <h2>Sobre mim</h2>
-          <p>
-            Tenho 26 anos, sou Paulistana e apaixonada por artes e cultura. Formada em teatro, atuei como atriz por cinco anos até a pandemia, quando embarquei em uma experiência transformadora na Califórnia. Durante os três anos que vivi lá, descobri minha paixão pela tecnologia e seu potencial criativo. Hoje, dedico-me integralmente à transição de carreira, estudando em tempo integral para me tornar desenvolvedora de software. Ah, e podem me chamar de Gaba!
-          </p>
-          <div id="about_github" class="flex">
-            <a
-              class="botao"
-              href="https://github.com/gaba-teixeira"
-              target="_blank"
-              >GitHub</a
-            >
-            <p>200 Seguidores</p>
-            <p>20 Repositorios</p>
-          </div>
-        </article>
+        
       </section>
       <section id="contact" class="contact_container">
         <article id="social-medias" class="contact_content">
@@ -114,7 +98,11 @@
             /></a>
           </div>
         </article>
-        <form action="" method="POST">
+        <form id="form" action="https://formsubmit.co/eb4a78016d817ed3e9e72f5cea20b6ec" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+          <input type="hidden" name="_captcha" value="false">
+
+
           <label for="nome">Nome</label>
           <input
             id="nome"
@@ -152,5 +140,7 @@
     <!-- Rodapé da Pagina  -->
 
     <footer>Feito com 💖 por Gabriela Teixeira - 2025</footer>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
